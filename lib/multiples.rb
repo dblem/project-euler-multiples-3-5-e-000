@@ -1,9 +1,7 @@
 def collect_multiples(limit)
-  multiples = []
+  multiples = Array.new
   for n in 1..limit.to_i-1
-    if n % 3 == 0 || n % 5 == 0
-      multiples << n
-    end
+    multiples << n if n % 3 == 0 || n % 5 == 0
   end
   multiples
 end
